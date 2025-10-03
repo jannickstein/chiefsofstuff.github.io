@@ -71,21 +71,28 @@ a:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.7rem 1.35rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 999px;
-  background: #ffd84d;
+  background: linear-gradient(135deg, #ffe15a, #ffd84d);
   color: #1a1a1a;
   font-weight: 600;
   text-decoration: none;
-  font-size: 0.95rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 12px 24px rgba(255, 216, 77, 0.24);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 12px 24px rgba(255, 216, 77, 0.28);
+}
+
+.hero__cta:visited {
+  color: #1a1a1a;
 }
 
 .hero__cta:hover,
 .hero__cta:focus-visible {
   transform: translateY(-1px);
-  box-shadow: 0 16px 28px rgba(255, 216, 77, 0.3);
+  box-shadow: 0 16px 28px rgba(255, 216, 77, 0.36);
+  filter: brightness(1.05);
 }
 
 h1 {
