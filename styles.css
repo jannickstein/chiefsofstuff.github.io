@@ -28,7 +28,8 @@ body {
   justify-content: center;
 }
 
-a {
+a,
+a:visited {
   color: var(--accent);
   text-decoration-color: rgba(255, 225, 90, 0.7);
 }
@@ -50,7 +51,7 @@ a:focus-visible {
 .hero {
   display: grid;
   justify-items: start;
-  gap: clamp(0.55rem, 2.2vw, 0.8rem);
+  gap: clamp(0.35rem, 1.8vw, 0.7rem);
 }
 
 .hero__emoji {
@@ -63,27 +64,28 @@ a:focus-visible {
   text-transform: uppercase;
   font-size: 0.85rem;
   color: var(--muted);
+  margin: 0;
 }
 
 .hero__cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.65rem 1.15rem;
+  padding: 0.7rem 1.35rem;
   border-radius: 999px;
-  background: var(--accent);
+  background: #ffd84d;
   color: #1a1a1a;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.95rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 12px 24px rgba(255, 225, 90, 0.18);
+  box-shadow: 0 12px 24px rgba(255, 216, 77, 0.24);
 }
 
 .hero__cta:hover,
 .hero__cta:focus-visible {
   transform: translateY(-1px);
-  box-shadow: 0 16px 28px rgba(255, 225, 90, 0.22);
+  box-shadow: 0 16px 28px rgba(255, 216, 77, 0.3);
 }
 
 h1 {
